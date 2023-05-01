@@ -74,6 +74,21 @@ header > img{
     margin: 0%;
 }
 
+table{
+    border-collapse: collapse;
+    padding: 0%;
+    color: white;
+    width: 100%;
+    height: 2vw;
+    background-color: white;
+    border-spacing: 0%;
+}
+td{
+    padding: 0%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
 nav{
     display: inline-block;
 }
@@ -88,7 +103,7 @@ nav > p{
 
 }
 
-p > img{
+td > img{
     margin: 0%;
     position: relative;
     top: 5px;
@@ -96,21 +111,18 @@ p > img{
 }
 
 #fight{
-    padding-left: 10vw;
-    padding-right: 10vw;
     background-color: red;
+
 }
 
 #hotel{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    background-color: black;
+
 
 }
 
 #rental{
-    position: absolute;
-    left: 75%;
+    background-color: black;
 
 }
 /* Logo */
@@ -212,43 +224,6 @@ input{
  article{
     display: inline-block;
  }
-
- #cinquete{
-    width: 50%;
-    height: 40vw;
-    background-image: url('imagens/cinqueterre.jpg');
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: cover;
- }
-
-#cinquete > p{
-    font-weight: lighter;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2vw;
-    color: white;
-    padding-left: 20px;
-    position: relative;
-    top: 88%;
-}
-
-#fotos{
-    margin-top: 0%;
-}
-
-
-
-#blocofotos{
-    padding-top: 9px;
-    position: relative;
-    top: 100%;
-    background-color: rebeccapurple;
-    height: 40vw;
-    width: 49%;
-    display: inline-block;
-    
-}
-
 
 
 
