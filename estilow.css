@@ -221,10 +221,182 @@ input{
     margin-bottom: 10px;
  }
 
- article{
-    display: inline-block;
+ /*Bloco de fotos*/
+
+ .conteiner{
+    width: 100%;
+    height: 40vw;
+    background-color: rgb(235, 235, 235);
+
+
  }
 
+ #cinque{
+    vertical-align: middle;
+    display: inline-block;
+    background-color: blueviolet;
+    background-image: url("imagens/cinqueterre.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 50%;
+    height: 100%;
+ }
+
+.localizacao{
+    font-size:1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: rgb(255, 252, 252);
+    padding: 0%;
+    margin: 0%
+}
+
+#terre{
+    position: relative;
+    top: 90%;
+    padding-left: 10px;
+}
+
+
+ #blocofotos{
+    vertical-align: middle;
+    display: inline-block;
+    background-color: rgb(235, 235, 235);
+    width: 49.5%;
+    height: 100%;
+    text-align: right;
+ 
+}
+
+#new{
+    display: inline-block;
+    background-color: blueviolet;
+    background-image: url("imagens/newyork.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 47%;
+    height: 47%;
+
+    text-align: left;
+}
+
+#york{
+    padding-left: 10px;
+    position: relative;
+    top: 85%;
+
+}
+
+#san{
+    display: inline-block;
+    background-color: brown;
+    background-image: url("imagens/sanfran.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 47%;
+    height: 47%;
+    vertical-align: top;
+    margin-left: 20px;
+    text-align: left;
+}
+
+#francisco{
+    padding-left: 10px;
+    position: relative;
+    top: 85%;
+}
+
+#pisa{
+    position: relative;
+    top: 6%;
+    display: inline-block;
+    background-color: cadetblue;
+    background-image: url("imagens/paris.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 47%;
+    height: 47%;
+    text-align: left;
+}
+
+#pisap{
+    padding-left: 10px;
+    position: relative;
+    top: 85%;
+}
+
+#paris{
+    position: relative;
+    top: 6%;
+    display: inline-block;
+    background-color: aqua;
+    background-image: url("imagens/pisa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 47%;
+    height: 47%;
+    margin-left: 20px;
+    text-align: left;
+}
+
+#parisp{
+    padding-left: 10px;
+    position: relative;
+    top: 85%;
+}
+
+/*Bloco de fotos*/
+
+/*Bloco de fotos 2*/
+
+#titulo2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+#conteiner2{
+    background-color: red;
+}
+
+#west{
+    display: inline-block;
+    width: 48%;
+    height: 100%;
+    background-color: white;
+
+}
+
+#mountains{
+    display: inline-block;
+    width: 48%;
+    height: 100%;
+    background-color: white;
+    margin-left: 3vw;
+    
+}
+
+#norway{
+    width: 100%;
+    height: 50%;
+    background-image: url("imagens/ocean.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#austria{
+    width: 100%;
+    height: 50%;
+    background-image: url("imagens/mountains.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#norway > h1{
+    text-align: left;
+}
+
+
+/*Bloco de fotos 2*/
 
 
 /* Main */
