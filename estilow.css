@@ -297,6 +297,152 @@ input{
  }
 
  /*Bloco de fotos*/
+ /*Bloco de fotos 2*/
+ .titulon{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+ }
+
+ #blocofotos2{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+ .lugar{
+    width: 48%;
+    height: 100%;
+    background-color: white;
+ }
+
+
+ #west{
+    position: relative;
+    left: -1%;
+ }
+
+ #austria{
+    position: relative;
+    left: 1%;
+
+ }
+
+ .lugar > img{
+    width: 100%;
+ }
+
+ .lugar > h1{
+    padding-left: 20px;
+    font-size: 2vmax;
+ }
+
+
+ .lugar > p{
+    font-size: 1.6vmax;
+    padding-left: 20px;
+ }
+
+ .price{
+    color: gray;
+ }
+
+ .buy{
+    margin-left: 25px;
+ }
+
+
+  /*Bloco de fotos*/
+
+ /*E-mail*/
+ #conteiner3{
+    margin-top: 30px;
+    background-color: rgb(92, 92, 92);
+    padding: 15px;
+ }
+
+ #conteiner3 > h1{
+    font-size: 2.3vmax;
+    color: white;
+    font-weight: lighter;
+ }
+
+ #conteiner3 > p{
+    color: white;
+    font-size: 1.5vmax;
+ }
+ 
+ #conteiner3 > input{
+    margin: 0%;
+    width: 100%;
+    margin-bottom: 20px;
+
+ } 
+
+ #email{
+    margin-bottom: 0%;
+ }
+ 
+ #subs{
+    display: inline-block;
+    padding: 10px;
+    background-color: red;
+ }
+
+ #subs > p{
+    margin: 0%;
+    color: white;
+    font-size: 1.3vmax;
+ }
+
+ #subs:hover{
+    transition-duration: 0.8s;
+    padding: 15px;
+ }
+
+  /*Contact*/
+ .contact{
+    height: 15px;
+ }
+
+ #send{
+    padding: 10px;
+    display: inline-block;
+    background-color: black;
+ }
+
+ #send > p{
+    margin: 0%;
+    font-size: 1.2vmax;
+    color: white;
+ }
+
+ #send:hover{
+    transition-duration: 0.8s;
+    padding: 15px;
+ }
+
+ .info{
+    width: 100%;
+    padding: 10px;
+    margin: 0%;
+    margin-bottom: 20px;
+ }
+  /*Contact*/
+
+ /*Final*/
+ #final{
+    text-align: center;
+
+ }
+ .social{
+    height: 23px;
+ }
+
+
+
+ /*Final*/
+
+
 
 
 /* Main */
