@@ -1,8 +1,15 @@
 @charset "UTF-8";
 
+
+
+
+:root{
+    --corp: rgb(235, 235, 235);
+}
+
 body{
     margin: 0%;
-    background-color: rgb(235, 235, 235);
+    background-color: var(--corp);
 }
 
 /* CABEÇALHO */
@@ -69,62 +76,44 @@ header > img{
 
 /* Logo */
 .logo{
-    width: 70vw;
-    background-color: black;
-    margin: 0%;
+    display: grid;
+    grid-template-areas: 
+    'flight hotel rental';
 }
 
-table{
-    border-collapse: collapse;
-    padding: 0%;
-    color: white;
-    width: 100%;
-    height: 2vw;
-    background-color: white;
-    border-spacing: 0%;
-}
-td{
-    padding: 0%;
-    text-align: center;
-    padding-bottom: 10px;
-}
 
-nav{
-    display: inline-block;
-}
-
-nav > p{
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin: 0%;
-    color: white;
-    font-size: 1.2em;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-td > img{
-    margin: 0%;
-    position: relative;
-    top: 5px;
-    height: 23px;
-}
-
-#fight{
+#flight{
+   grid-area: flight;
     background-color: red;
-
 }
+
 
 #hotel{
+    grid-area: hotel;
     background-color: black;
-
-
+ 
 }
 
 #rental{
+    grid-area: rental;
     background-color: black;
-
 }
+
+.op{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vw;
+    position: relative;
+    left: 35%;
+    padding-bottom: 3px;
+}
+
+.img{
+    height: 1.8vw;
+    position: relative;
+    top: 5px;
+}
+
 /* Logo */
 
 /* Logo parte 2 */
@@ -222,181 +211,92 @@ input{
  }
 
  /*Bloco de fotos*/
-
- .conteiner{
-    width: 100%;
+ #blocodefotos{
+    background-color: var(--corp);
+    display: grid;
     height: 40vw;
-    background-color: rgb(235, 235, 235);
+    grid-template-areas:
+    'cinque cinque cinque cinque new san'
+    'cinque cinque cinque cinque pisa paris';
+    gap: 15px;
 
-
- }
+}
 
  #cinque{
-    vertical-align: middle;
-    display: inline-block;
-    background-color: blueviolet;
+    grid-area: cinque;
     background-image: url("imagens/cinqueterre.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 50%;
-    height: 100%;
- }
-
-.localizacao{
-    font-size:1.3em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    color: rgb(255, 252, 252);
-    padding: 0%;
-    margin: 0%
-}
-
-#terre{
-    position: relative;
-    top: 90%;
-    padding-left: 10px;
-}
-
-
- #blocofotos{
-    vertical-align: middle;
-    display: inline-block;
-    background-color: rgb(235, 235, 235);
-    width: 49.5%;
-    height: 100%;
-    text-align: right;
- 
 }
 
 #new{
-    display: inline-block;
-    background-color: blueviolet;
+    grid-area: new;
     background-image: url("imagens/newyork.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 47%;
-    height: 47%;
-
-    text-align: left;
-}
-
-#york{
-    padding-left: 10px;
-    position: relative;
-    top: 85%;
-
 }
 
 #san{
-    display: inline-block;
-    background-color: brown;
+    grid-area: san;
     background-image: url("imagens/sanfran.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 47%;
-    height: 47%;
-    vertical-align: top;
-    margin-left: 20px;
-    text-align: left;
-}
-
-#francisco{
-    padding-left: 10px;
-    position: relative;
-    top: 85%;
+    background-size: 100% 100%;
 }
 
 #pisa{
-    position: relative;
-    top: 6%;
-    display: inline-block;
-    background-color: cadetblue;
-    background-image: url("imagens/paris.jpg");
+    grid-area: pisa;
+    background-image: url("imagens/pisa.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 47%;
-    height: 47%;
-    text-align: left;
-}
-
-#pisap{
-    padding-left: 10px;
-    position: relative;
-    top: 85%;
+    background-size: 100% 100%;
 }
 
 #paris{
-    position: relative;
-    top: 6%;
-    display: inline-block;
-    background-color: aqua;
-    background-image: url("imagens/pisa.jpg");
+    grid-area: paris;
+    background-image: url("imagens/paris.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 47%;
-    height: 47%;
-    margin-left: 20px;
-    text-align: left;
+    background-size: 100% 100%;
 }
 
-#parisp{
-    padding-left: 10px;
+
+ #blocodefotos > div{
+    background-color: brown;
+    padding: 20px;
+    border: 1px solid black; 
+ }
+
+ .fontim{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: 1.6vw;
+ }
+ 
+ #terre{
+    position: relative;
+    top: 90%;
+ }
+
+ #york{
     position: relative;
     top: 85%;
-}
+ }
 
-/*Bloco de fotos*/
+ #francisco{
+    position: relative;
+    top: 85%;
+ }
+ 
+ #pisap{
+    position: relative;
+    top: 85%;
+ }
 
-/*Bloco de fotos 2*/
+ #parisp{
+    position: relative;
+    top: 85%;
+ }
 
-#titulo2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-}
-
-#conteiner2{
-    background-color: red;
-}
-
-#west{
-    display: inline-block;
-    width: 48%;
-    height: 100%;
-    background-color: white;
-
-}
-
-#mountains{
-    display: inline-block;
-    width: 48%;
-    height: 100%;
-    background-color: white;
-    margin-left: 3vw;
-    
-}
-
-#norway{
-    width: 100%;
-    height: 50%;
-    background-image: url("imagens/ocean.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#austria{
-    width: 100%;
-    height: 50%;
-    background-image: url("imagens/mountains.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-
-#norway > h1{
-    text-align: left;
-}
-
-
-/*Bloco de fotos 2*/
+ /*Bloco de fotos*/
 
 
 /* Main */
