@@ -168,7 +168,6 @@ input{
 
 #search{
     display: inline-block;
-    background-color: rgb(62, 62, 62);
     margin-top: 20px;
     margin-bottom: 30px;
     margin-left: 10px;
@@ -176,8 +175,8 @@ input{
 
 #search > p{
     margin: 0%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
     color: white;
@@ -185,14 +184,6 @@ input{
     font-weight: lighter;
 }
 
-
-#search:hover{
-    transition-duration: 0.8s;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
 /* Logo parte 2 */
 /* Main */
  main{
@@ -201,12 +192,12 @@ input{
  }
 
  #titulo1{
-    font-size: 2em;
+    font-size: 2vmax;
     font-weight: lighter;
  }
 
  .pnormal{
-    font-size: 1.3em;
+    font-size: 1.5vmax;
     margin-bottom: 10px;
  }
 
@@ -301,6 +292,7 @@ input{
  .titulon{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
+    font-size: 2vmax;
  }
 
  #blocofotos2{
@@ -408,15 +400,29 @@ input{
     padding: 10px;
     display: inline-block;
     background-color: black;
+ } 
+ 
+ button{
+   cursor: pointer;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 10px;
+   padding-right: 10px;
+   background-color: black;
  }
 
- #send > p{
+ button:active{
+   background-color: darkgray;
+
+ }
+
+  button > p{
     margin: 0%;
     font-size: 1.2vmax;
     color: white;
  }
 
- #send:hover{
+ button:hover{
     transition-duration: 0.8s;
     padding: 15px;
  }
@@ -440,13 +446,11 @@ input{
 
 
 
+
+
  /*Final*/
 
 
 
 
 /* Main */
-
-
-
-
