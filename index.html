@@ -5,110 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilow.css">
+    <link rel="stylesheet" href="estilow2.css">
     <title>Site</title>
 </head>
 <body>
-    <header> <img src="imagens/icone.png" alt="">
-        <h1>Logo</h1>
-        <img src="imagens/2319177.png" alt="" id="pesquisa">
+    <header><img src="imagens/icone.png" alt="Pointer"><h1>Logo</h1><img src="imagens/2319177.png" alt="pesquisa.foto" id="pesquisa"></header>
 
-    </header>
-    <section id="imagem">
-        <article id="conteudo">
-            <div class="logo">   
-                <article id="flight"><p class="op"><img src="imagens/avisão.png" alt="avião" class="img">  Flight</p></article>         
-                <article id="hotel"><p class="op"><img class="img" src="imagens/cama.png" alt="cama">  Hotel</p></article>
-                <article id="rental"><p class="op"><img src="imagens/carro.png" alt="carro" class="img">  Rental</p></article>
+        <div id="conteinerA">
+            <div class="box">
+                <div class="cimg"></div>
+                <div class="ctext"><p>Flight</p></div>
+            </div>
+            <div class="box" id="box2">
+                <div class="cimg" id="hotel"></div>
+                <div class="ctext"><p>Hotel</p></div>
+            </div>
+            <div class="box" id="box3">
+                <div class="cimg" id="rental"></div>
+                <div class="ctext"><p>Rental</p></div>
+            </div>
+        </div>
+
+        <div id="travel">
+            <h1>Travel the world with us</h1>
+            
+            <form action="">
+               <p>From</p>
+                <input type="text" class="pes" placeholder="Departing from">
+                <p>To</p>
+                <input type="text" class="pes" placeholder="Arriving at">
+                <br>
+                <input type="button" value="Search and find dates" id="search">
+            </form>
+        </div>
+
+        <main>
+            <h1>Good offers Right Now</h1>
+            <p>Up to 50% discount.</p>
+
+            <div id="blocofotos">
+                <div class="fotos" id="terre"><p class="lugar">Cinque Terre</p></div>
+                <div class="fotos" id="york"><p class="lugar">New York</p></div>
+                <div class="fotos" id="san"><p class="lugar">San Francisco</p></div>
+                <div class="fotos" id="pisa"><p class="lugar">Pisa</p></div>
+                <div class="fotos" id="paris"><p class="lugar">Paris</p></div>
+            </div>
+
+            <h1>Explore Nature</h1>
+            <p>Travel with us and see nature at its finest</p>
+            <div id="blocofotos2">
+                <div class="fotos2">
+                    <div class="img" id="mountains"></div>
+                    <div class="textofoto">
+                        <h1 class="titulofoto">West Coast, Norway</h1>
+                        <p class="price">Roundtrip from $79</p>
+                        <p class="paragrafoto">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <p class="paragrafoto" id="buy">Buy Tickets</p>
+                    </div>
                 </div>
-           
-                <h1 id="titulo">Travel the world with us</h1>
-                
-                <article id="boxfrom">
-                <p id="from">From</p>
-                <input type="text" placeholder="Departing from">
-                </article>
-
-                <article id="boxarri">
-                <p id="arriving">To</p>
-                <input type="text" placeholder="Arriving at"></article>
-
-                <button id="search"><p> Search and find dates</p></button>
-                    
+                <div class="fotos2">
+                    <div class="img" id="austria"></div>
+                    <div class="textofoto">
+                        <h1 class="titulofoto">Mounstains, Austria</h1>
+                        <p class="price">Roundtrip from $39</p>
+                        <p class="paragrafoto">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <p class="paragrafoto" id="buy">Buy Tickets</p>
+                    </div>
                 </div>
-        </article>
-    </section>
-    <main>
-        <h1 id="titulo1">Good Offers Right Now</h1>
-        <p class="pnormal">Up to 50% discount</p>
-        <div id="blocodefotos">
-            <div id="cinque"><p class="fontim" id="terre">Terre</p></div>
-            <div id="new"><p class="fontim" id="york">New York</p></div>
-            <div id="san"><p class="fontim" id="francisco">San francisco</p></div>
-            <div id="pisa"><p class="fontim" id="pisap">Pisa</p></div>
-            <div id="paris"><p class="fontim" id="parisp">Paris</p></div>
-        </div>
-        <h1 class="titulon">Explore Nature</h1>
-        <p class="pnormal">Travel with us and see nature at its finest</p>
-        
-        <div id="blocofotos2">
-            <div class="lugar" id="west">
-                <img src="imagens/ocean.jpg" alt="ocen">
-                <h1 class="titulon" >West Coast, Norway</h1>
-                <p class="price">Roundtrip from $79</p>
-                <p class="pnorma">Praesen tincidunt sed tellus ut rutrum sed vitae justo</p>
-                <p class="buy">Buy Tickets</p>
             </div>
-            <div class="lugar" id="austria">
-                <img src="imagens/mountains.jpg" alt="mountains">
-                <h1 class="titulon">Mountains, Austria</h1>
-                <p class="price">One-way from $39</p>
-                <p class="pnorma">Praesen tincidunt sed tellus ut rutrum sed vitae justo</p>
-                <p class="buy">Buy Tickets</p>
-
+            
+            <div id="newsletter">
+                <h1>Get the best offers first!</h1>
+                <p>Join our newsletter.</p>
+                <p>E-mail</p>
+                <form action="">
+                    <input type="email" id="email1">
+                    <input type="button" value="Subscribe" id="sub">
+                </form>
             </div>
-        </div>
+            <h1>Contact</h1>
+            <p>Let us book your next trip!</p>
 
-        <div id="conteiner3">
-            <h1 class="titulon">Get the best offers first</h1>
-            <p>Join our newsletter.</p>
-            <p id="email">E-mail</p>
-            <input type="text" placeholder="Your Email address">
-            <div id="subs">
-                <p>Subscribe</p>
-
+            <div id="final">
+                <div class="imgf" id="loc"></div>
+                <p class="textf">Chicago, US</p>
+                <br>
+                <div class="imgf" id="tele"></div>
+                <p class="textf"> Phone +00 151515</p>
+                <br>
+                <div class="imgf" id="emai"></div>
+                <p class="textf"> Email: mail@mail.com</p>
+                <br>
+                <form action="">
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="email" id="emf" placeholder="Email">
+                    <input type="text" id="menssagem" placeholder="Message">
+                    <input type="button" value="SEND MESSAGE" id="message">
+                </form>
+            </div>
+            <div id="sociais">
+                <p>Find Us On</p>
+                <img src="imagens/facelogo.png" alt="facebook">
+                <img src="imagens/instalogo.png" alt="Instagram">
+                <img src="imagens/snaplogo.png" alt="Snaptube">
+                <img src="imagens/pinlogo.png" alt="Pinterrest">
+                <img src="imagens/twitterlog.png" alt="Twitter">
+                <img src="imagens/linkedinlogo.png" alt="Linkedin">
+                <p>Powered by w3 css</p>
             </div>
 
-        </div>
-        
-        <h1 class="titulon">Contact</h1>
-        <p class="pnorma">Let us book your next trip!</p>
-        <p><img class="contact" src="imagens/icone.png" alt=""> Chicago US</p>
-        <p><img class="contact" src="imagens/telefonelogo.png" alt=""> Phone +00 151515</p>
-        <p><img class="contact" src="imagens/emaillogo.png" alt=""> Email: mail@mail.com</p>  
-        
-        <input class="info" type="text" placeholder="Name">
-        <input class="info" type="text" placeholder="Email">
-        <input class="info" type="text" placeholder="Message">
-        <button>
-            <p>SEND MESSAGE</p>
-        </button>
-        <br>
-
-        <div id="final">
-            <p class="pnormal">Find Us on</p>
-            <img class="social" src="imagens/facelogo.png" alt="">
-            <img class="social" src="imagens/instalogo.png" alt="">
-            <img class="social" src="imagens/snaplogo.png" alt="">
-            <img class="social" src="imagens/pinlogo.png" alt="">
-            <img class="social" src="imagens/twitterlog.png" alt="">
-            <img class="social" src="imagens/linkedinlogo.png" alt="">        
-            <p>Powered by <abbr title="Estilização">w3CSS</abbr></p>
-        </div>
 
 
-    </main>
-
-
-    
+        </main>
 </body>
 </html>

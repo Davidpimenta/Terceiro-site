@@ -1,456 +1,422 @@
 @charset "UTF-8";
 
 
-
-
-:root{
-    --corp: rgb(235, 235, 235);
-}
-
 body{
-    margin: 0%;
-    background-color: var(--corp);
+   margin: 0%;
+   background-color: lightgray;
 }
 
-/* CABEÇALHO */
+/*CABEÇA*/
 header{
-    background-color: white;
+   background-color: white;
+   height: 35px;
+   padding: 15px;
 }
 
 header > h1{
-    display: inline-block;
-    color: red;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    padding-top: 10px;
-    padding-bottom: 8px;
-    padding-left: 5px;
+   display: inline-block;
+   margin: 0%;
+   color: red;font-family: Arial, Helvetica, sans-serif;
+   font-weight: lighter;
 }
 
 header > img{
-    height: 30px;
-    padding-left: 10px;
+   height: 30px;
+   margin-right: 5px;
 }
 
 #pesquisa{
-    padding-right: 10px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    border-radius: 10px;
-    position: absolute;
-    left: 99%;
-    top: 1%;
-    transform: translate(-100%);
+   position: absolute;
+   left: 99%;
+   top: 2%;
+   transform: translate(-99%);
+   padding: 8px;
 }
 
 #pesquisa:hover{
-    transition-duration: 0.5s;
-    background-color: lightgray;
+   background-color: lightgray;
+   transition-duration: 0.5s;
+   border-radius: 10px;
+}
+/*CABEÇA*/
+
+/*TRAVEL*/
+/*MENU*/
+#conteinerA{
+   display: flex;
+   flex-direction: row;
+   background-color: aquamarine;
+   height: 40px;
 }
 
-/* CABEÇALHO */
-
-
-/* Travel */
-#imagem{
-    max-width: 100vw;
-    height: 91.2vh;
-    background-image: url('imagens/london.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+.box{
+   display: grid;
+   grid-template-columns: 30% 20%;
+   text-align: center;
+   justify-content: center;
+   background-color: red;
+   width: 100%;
+   height: 100%;
 }
 
-#conteudo{
-    width: 70vw;
-    max-height: 500px;
-    min-height: 271px;
-    position: absolute;
-    background-color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-/* Travel */
-
-/* Logo */
-.logo{
-    display: grid;
-    grid-template-areas: 
-    'flight hotel rental';
+#box2{
+   background-color: black;
 }
 
-
-#flight{
-   grid-area: flight;
-    background-color: red;
+#box3{
+   background-color: black;
 }
 
+.ctext{
+   margin-left: 25px;
+   display: flex;
+   color: white; 
+   justify-content: center;
+   text-align: center;
+}
+
+.ctext p{
+   margin: 0%;
+  position: relative;
+  top: 25%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+
+.cimg{
+   background: url("imagens/avisão.png");
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
 
 #hotel{
-    grid-area: hotel;
-    background-color: black;
- 
+   background: url("imagens/cama.png");
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: contain;
 }
 
 #rental{
-    grid-area: rental;
-    background-color: black;
+   background: url("imagens/carro.png");
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+/*MENU*/
+
+#travel{
+   background-color: white;
+   width: 90%;
+   padding: 0% 5%;
+   padding-bottom: 15px;
 }
 
-.op{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3vw;
-    position: relative;
-    left: 35%;
-    padding-bottom: 3px;
+#travel > h1{
+   margin: 0%;
+   padding: 15px 0px;
 }
 
-.img{
-    height: 1.8vw;
-    position: relative;
-    top: 5px;
+form > p{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   margin-bottom: 0%;
 }
 
-/* Logo */
-
-/* Logo parte 2 */
-
-#titulo{
-    margin: 0%;
-    margin-top: 30px;
-    padding-left: 10px;
-    font-size: 2em;
-    font-weight: lighter;
-}
-
-#boxfrom{
-    width: 50%;
-    display: inline-block;
-}
-
-#boxarri{
-    width: 49%;
-    display: inline-block;
-
-}
-
-#from{
-    margin: 0%;
-    margin-top: 10px;
-    padding-left: 10px;
-    font-size: 1.2em;
-    font-weight: lighter;
-}
-
-#procura{
-    margin: 0%;
-}
-
-#arriving{
-    margin: 0%;
-    margin-top: 10px;
-    padding-left: 10px;
-    font-size: 1.2em;
-    font-weight: lighter;
-}
-
-input{
-    width: 90%;
-    margin-top: 5px;
-    margin-left: 10px;
-    padding-left: 5px;
-    height: 25px;
-    
+.pes{
+   width: 95%;
+   padding: 10px;
+   border: 1px solid black;
 }
 
 #search{
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin-left: 10px;
+   margin-top: 15px;
+   padding: 10px 20px;
+   background-color: rgb(105, 105, 105);
+   color: white;
+   font-size: 15px;
+   cursor: pointer;
 }
 
-#search > p{
-    margin: 0%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
+#search:active{
+   color: black;
+}
+/*TRAVEL*/
+
+/*MAIN*/
+
+main{
+   width: 90%;
+   padding: 0% 5%;
 }
 
-/* Logo parte 2 */
-/* Main */
- main{
-    width: 85vw;
-    margin: auto;
- }
+main > h1,p{
+   font-weight: lighter;
+}
 
- #titulo1{
-    font-size: 2vmax;
-    font-weight: lighter;
- }
+main > p{
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+}
 
- .pnormal{
-    font-size: 1.5vmax;
-    margin-bottom: 10px;
- }
+/*BLOCOFOTOS*/
+#blocofotos{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
 
- /*Bloco de fotos*/
- #blocodefotos{
-    background-color: var(--corp);
-    display: grid;
-    height: 40vw;
-    grid-template-areas:
-    'cinque cinque cinque cinque new san'
-    'cinque cinque cinque cinque pisa paris';
-    gap: 15px;
+.fotos{
+   background-color: red;
+   width: 100%;
+   height: 60vw;
+}
+
+#terre{
+   display: grid;
+   background: url("imagens/cinqueterre.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+}
+
+.lugar{
+   display: inline;
+   margin: 0%;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 3.2vmax;
+   color: white;  
+   position: relative;
+   top: 85%;
+   left: 3%;
 
 }
 
- #cinque{
-    grid-area: cinque;
-    background-image: url("imagens/cinqueterre.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-#new{
-    grid-area: new;
-    background-image: url("imagens/newyork.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+#york{
+   background: url("imagens/newyork.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
 }
 
 #san{
-    grid-area: san;
-    background-image: url("imagens/sanfran.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+   background: url("imagens/sanfran.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
 }
 
 #pisa{
-    grid-area: pisa;
-    background-image: url("imagens/pisa.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+   background: url("imagens/pisa.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
 }
 
 #paris{
-    grid-area: paris;
-    background-image: url("imagens/paris.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+   background: url("imagens/paris.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+}
+/*BLOCOFOTOS*/
+
+/*BLOCOFOTOS2*/
+
+#blocofotos2{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
 }
 
-
- #blocodefotos > div{
-    background-color: brown;
-    padding: 20px;
-    border: 1px solid black; 
- }
-
- .fontim{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-weight: lighter;
-    font-size: 1.6vw;
- }
- 
- #terre{
-    position: relative;
-    top: 90%;
- }
-
- #york{
-    position: relative;
-    top: 85%;
- }
-
- #francisco{
-    position: relative;
-    top: 85%;
- }
- 
- #pisap{
-    position: relative;
-    top: 85%;
- }
-
- #parisp{
-    position: relative;
-    top: 85%;
- }
-
- /*Bloco de fotos*/
- /*Bloco de fotos 2*/
- .titulon{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    font-size: 2vmax;
- }
-
- #blocofotos2{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
+.fotos2{
+   background-color: red;
+   width: 100%;
 }
 
- .lugar{
-    width: 48%;
-    height: 100%;
-    background-color: white;
- }
+.img{
+   width: 100%;
+   height: 45vh;
+   background-color: aqua;
+}
 
+#mountains{
+   background: url("imagens/ocean.jpg");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+}
 
- #west{
-    position: relative;
-    left: -1%;
- }
+#austria{
+   background: url("imagens/mountains.jpg");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+}
 
- #austria{
-    position: relative;
-    left: 1%;
+.textofoto{
+   width: 90%;
+   padding: 0% 5%;
+   height: 55%;
+   background-color: white;
+}
 
- }
+.titulofoto{
+   margin: 0%;
+   padding: 15px 0px;
+}
 
- .lugar > img{
-    width: 100%;
- }
+.paragrafoto{
+   margin: 0%;
+   padding: 15px 0px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: lighter;
+   font-size: 24px;
+}
 
- .lugar > h1{
-    padding-left: 20px;
-    font-size: 2vmax;
- }
+.price{
+   color: rgba(128, 128, 128, 0.76);
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 24px;
+}
 
+#buy{
+   position: relative;
+   left: 5%;
+}
 
- .lugar > p{
-    font-size: 1.6vmax;
-    padding-left: 20px;
- }
+/*NEWSLETTER*/
+#newsletter{
+   background-color: rgb(102, 102, 102);
+   width: 94%;
+   margin: 20px 0px;
+   padding: 25px 3%;
+}
 
- .price{
-    color: gray;
- }
+#newsletter > h1{
+   color: white;
+   margin: 0%;
+}
 
- .buy{
-    margin-left: 25px;
- }
+#newsletter > p{
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   font-weight: lighter;
+   margin: 0px;
+   margin-top: 20px;
+   }
 
+#email1{
+   width: 100%;
+   padding: 5px 0px;
+   font-size: 25px;
+   font-family: Arial, Helvetica, sans-serif;
+   border: 2px solid black;
+}
 
-  /*Bloco de fotos*/
+#sub{
+   margin-top: 10px;
+   background-color: rgb(255, 67, 67);
+   padding: 10px 20px;
+   color: white;
+   box-shadow: none;
+   border: 1px solid black;
+}
 
- /*E-mail*/
- #conteiner3{
-    margin-top: 30px;
-    background-color: rgb(92, 92, 92);
-    padding: 15px;
- }
-
- #conteiner3 > h1{
-    font-size: 2.3vmax;
-    color: white;
-    font-weight: lighter;
- }
-
- #conteiner3 > p{
-    color: white;
-    font-size: 1.5vmax;
- }
- 
- #conteiner3 > input{
-    margin: 0%;
-    width: 100%;
-    margin-bottom: 20px;
-
- } 
-
- #email{
-    margin-bottom: 0%;
- }
- 
- #subs{
-    display: inline-block;
-    padding: 10px;
-    background-color: red;
- }
-
- #subs > p{
-    margin: 0%;
-    color: white;
-    font-size: 1.3vmax;
- }
-
- #subs:hover{
-    transition-duration: 0.8s;
-    padding: 15px;
- }
-
-  /*Contact*/
- .contact{
-    height: 15px;
- }
-
- #send{
-    padding: 10px;
-    display: inline-block;
-    background-color: black;
- } 
- 
- button{
-   cursor: pointer;
-   padding-top: 5px;
-   padding-bottom: 5px;
-   padding-left: 10px;
-   padding-right: 10px;
+#sub:active{
    background-color: black;
- }
-
- button:active{
-   background-color: darkgray;
-
- }
-
-  button > p{
-    margin: 0%;
-    font-size: 1.2vmax;
-    color: white;
- }
-
- button:hover{
-    transition-duration: 0.8s;
-    padding: 15px;
- }
-
- .info{
-    width: 100%;
-    padding: 10px;
-    margin: 0%;
-    margin-bottom: 20px;
- }
-  /*Contact*/
-
- /*Final*/
- #final{
-    text-align: center;
-
- }
- .social{
-    height: 23px;
- }
+}
 
 
+/*BLOCOFOTOS2*/
 
+/*NEWSLETTER*/
 
+/*FINAL*/
 
- /*Final*/
+.imgf{
+   display: inline-block;
+   height: 20px;
+   width: 20px;
+}
 
+#loc{
+   background: url("imagens/icone.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
 
+#tele{
+   background: url("imagens/telefonelogo.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
 
+#emai{
+   background: url("imagens/emaillogo.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   top: 3px;
+}
 
-/* Main */
+.textf{
+   display: inline-block;
+   font-size: 20px;
+   margin: 0%;
+}
+
+#name{
+   width: 100%;
+   padding: 15px 0px;
+   margin: 10px 0px;
+   text-indent: 10px;
+   
+}
+
+#emf{
+   width: 100%;
+   padding: 15px 0px;
+   margin: 10px 0px;
+   text-indent: 10px;
+}
+
+#menssagem{
+   width: 100%;
+   padding: 15px 0px;
+   margin: 10px 0px;
+   text-indent: 10px;
+}
+
+#message{
+   padding: 15px 20px;
+   background-color: black;
+   color: white;
+   border: 1px solid black;
+}
+
+#message:active{
+   background-color: gray;
+}
+
+/*FINAL*/
+
+/*SOCIAIS*/
+
+#sociais{
+   text-align: center;
+}
+
+#sociais > p{
+   font-size: 24px;
+   color: gray;
+   font-weight: lighter;
+}
+
+#sociais > img{
+   height: 25px;
+}
+
+/*SOCIAIS*/
+
+/*MAIN*/
