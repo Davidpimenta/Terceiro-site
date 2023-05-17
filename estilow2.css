@@ -107,7 +107,9 @@
 
     .titulofoto{
         padding: 10px 0px;
+        font-size: 1.7em;
     }
+
     .price{
        font-size: 18px;
         margin: 10px 0px;
@@ -137,11 +139,41 @@
         margin: auto;
     }
 
-    .fotos{
-     }
-
     .lugar{
         font-size: 20px;
      }
 
+}
+
+
+@media screen and (max-height: 400px){
+    #conteinerA{
+        height: 30px;
+    }
+    
+    #travel{
+        padding: 0% 5%;
+        padding-bottom: 8px;
+    }
+
+    #travel > h1{
+        padding-top: 4px;
+        padding-bottom: 0%;
+        font-size: 1.5em;
+    }
+
+    form > P{
+        font-size: 1.1em;
+        margin: 5px;
+    }
+
+    .pes{
+        padding: 5px;
+    }
+
+    #search{
+        margin-top: 5px;
+        padding: 5px 15px;
+    }
+    
 }
