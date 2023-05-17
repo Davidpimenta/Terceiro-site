@@ -55,8 +55,9 @@ header > img{
    text-align: center;
    justify-content: center;
    background-color: red;
-   width: 100%;
+   width: 90%;
    height: 100%;
+   padding: 0% 5%;
 }
 
 #box2{
@@ -171,6 +172,11 @@ main > p{
    background-color: red;
    width: 100%;
    height: 60vw;
+   display: grid;
+   grid-template-rows: 88% 12%;
+   grid-template-areas:      'nada'
+   'lugar';
+   border: 2px solid black;
 }
 
 #terre{
@@ -179,18 +185,18 @@ main > p{
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center center;
+   
 }
 
 .lugar{
+   grid-area: lugar;
    display: inline;
    margin: 0%;
    font-family: Arial, Helvetica, sans-serif;
-   font-size: 3.2vmax;
+   font-size: 3vmax;
    color: white;  
-   position: relative;
-   top: 85%;
+   position: relative; 
    left: 3%;
-
 }
 
 #york{
@@ -321,6 +327,7 @@ main > p{
    color: white;
    box-shadow: none;
    border: 1px solid black;
+   cursor: pointer;
 }
 
 #sub:active{
@@ -393,6 +400,7 @@ main > p{
    background-color: black;
    color: white;
    border: 1px solid black;
+   cursor: pointer;
 }
 
 #message:active{

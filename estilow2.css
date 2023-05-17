@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+    #conteiner{
+        height: calc(100vh - 50px);
+        width: 100%;
+        background-color: red;
+        background: url("imagens/london.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    
+    #conteudo{
+        width: 80vw;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .ctext{
+        margin-left: 5px;
+        justify-content: left;
+        
+    }
+
+    .ctext p{
+        font-size: 16px;
+    }
+    
+    .box {
+        display: grid;
+        grid-template-columns: 30% 20%;
+        background-color: red;
+        width: 100%;
+        height: 100%;
+        padding: 0% 11%;
+        justify-content: left;
+    }
+
+    #blocofotos{
+        height: 500px;
+        display: grid;
+        grid-template-columns: calc(50% - 2px) calc(25% - 22px) calc(25% - 22px);
+        grid-template-areas: 
+        'terre york san'
+        'terre pisa paris'
+        ;
+        gap: 20px;
+    }
+
+    .fotos{
+        display: grid;
+        grid-template-rows: 90% 10%;
+        grid-template-areas: 
+        'nada'
+        'lugar';
+        height: 100%;
+        border: 2px solid black;
+        box-shadow: 4px 3px 2px rgba(0, 0, 0, 0.466);
+    }
+
+    .lugar{
+        grid-area: lugar;
+        font-size: 2vmax;
+        position: relative;
+        left: 3%;      
+    }
+
+    #terre{
+        grid-area: terre;
+        height: 100%;
+        grid-template-rows: 95% 5%;
+    }
+
+    #york{
+        grid-area: york;
+    }
+
+    #san{
+        grid-area: san;
+    }
+    
+    #pisa{
+        grid-area: pisa;
+    }
+
+    #paris{
+        grid-area: paris;
+    }
+
+    #blocofotos2{
+        flex-direction: row;
+        justify-content: space-around;
+        gap: none;
+        width: 100%;
+    }
+    .fotos2{
+        height: 100%;
+        background-color: white;
+    }
+
+    .img{
+        height: 300px;
+    }
+
+    .titulofoto{
+        padding: 10px 0px;
+    }
+    .price{
+       font-size: 18px;
+        margin: 10px 0px;
+    }
+
+    .paragrafoto{
+        padding: 0%;
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+}
+
+
+@media screen and (min-width: 1201px){
+
+    #pesquisa{
+        top: 1%;
+    }
+    
+    #conteudo{
+        width: 60vw;
+    }
+    
+    main{
+        width: 75%;
+        padding: 0% 3%;
+        margin: auto;
+    }
+
+    .fotos{
+     }
+
+    .lugar{
+        font-size: 20px;
+     }
+
+}
